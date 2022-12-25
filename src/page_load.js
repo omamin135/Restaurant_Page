@@ -1,0 +1,105 @@
+import img from "./pizza.jpg";
+import githubImage from "./github-mark.svg";
+
+function loadHeader() {
+    const header = document.createElement("header");
+
+    const imgContainer = document.createElement("div");
+    imgContainer.setAttribute("class", "img-container");
+
+    /* load the main img */
+    const mainImg = document.createElement("img");
+    mainImg.setAttribute("src", img);
+    mainImg.setAttribute("id", "header-img");
+    imgContainer.appendChild(mainImg);
+
+    /* load the restuarant name overlay */
+    let div = document.createElement("div");
+    div.setAttribute("id", "res-name");
+
+    let p = document.createElement("p");
+    p.textContent = "LePizza";
+    div.appendChild(p);
+
+    p = document.createElement("p");
+    p.textContent = "Eat - Dine - Enjoy";
+    div.appendChild(p);
+
+    imgContainer.appendChild(div);
+
+    header.appendChild(imgContainer);
+
+    /* create the selection options */
+    const headingDiv = document.createElement("div");
+    headingDiv.setAttribute("id", "heading");
+
+    const selectionDiv = document.createElement("div");
+    selectionDiv.setAttribute("id", "selection");
+
+    const ul = document.createElement("ul");
+
+    /* create home */
+    let li = document.createElement("li");
+    li.setAttribute("id", "home");
+    div = document.createElement("div");
+    p = document.createElement("p");
+    p.textContent = "HOME";
+
+    div.appendChild(p);
+    li.appendChild(div);
+    ul.appendChild(li);
+
+    /* create menu */
+    li = document.createElement("li");
+    li.setAttribute("id", "menu");
+    div = document.createElement("div");
+    p = document.createElement("p");
+    p.textContent = "MENU";
+
+    div.appendChild(p);
+    li.appendChild(div);
+    ul.appendChild(li);
+    
+    /* create about us */
+    li = document.createElement("li");
+    li.setAttribute("id", "about-us");
+    div = document.createElement("div");
+    p = document.createElement("p");
+    p.textContent = "ABOUT US";
+
+    div.appendChild(p);
+    li.appendChild(div);
+    ul.appendChild(li);
+
+    selectionDiv.appendChild(ul);
+    headingDiv.appendChild(selectionDiv);
+
+
+    header.appendChild(headingDiv);
+
+    document.querySelector("body").appendChild(header);
+    
+}
+
+function loadFooter() {
+
+    const footer = document.createElement("footer");
+
+    const p = document.createElement("p");
+    p.textContent = "Made By Om Amin";
+
+    footer.appendChild(p);
+
+    const githubImg = document.createElement("img");
+    githubImg.setAttribute("src", githubImage);
+
+    footer.appendChild(githubImg);
+
+    document.querySelector("body").appendChild(footer);
+
+}
+
+export default function loadPage() {
+    loadHeader();
+    loadFooter();
+} 

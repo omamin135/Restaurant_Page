@@ -86,8 +86,15 @@ footer {
     width: 100vw;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 15px;
     position: absolute;
     bottom: 0px;
     background-color: var(--medium-gray);
     color: var(--creamy-white);
+}
+
+footer > img {
+    width: 20px;
+    height: auto;
 }
