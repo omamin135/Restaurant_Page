@@ -1,11 +1,44 @@
-ul {
+
+header {
+    position: sticky;
+    display: grid;
+    grid-template: 1fr / 5fr 1fr;
+}
+
+#selection {
     display: flex;
+    justify-content: center;
+}
+
+ul {
+    border-color: blue;
+    width:fit-content;
+    display: flex;
+    gap: 5px;
+    padding: 0px;
 }
 
 li {
     list-style-type: none;
+    width: 100px;
 }
 
-ul p {
-    width: 70px;
+li > div {
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li p {
+    margin: 0px;
+    text-align: center;
+}
+
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
 }
