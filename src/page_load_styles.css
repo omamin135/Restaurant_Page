@@ -107,8 +107,6 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    /* position: absolute;
-    bottom: 0px; */
     background-color: var(--medium-gray);
     color: var(--creamy-white);
     font-family: "barlow";

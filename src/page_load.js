@@ -42,7 +42,8 @@ function loadHeader() {
 
     /* create home */
     let li = document.createElement("li");
-    li.setAttribute("id", "home");
+    li.classList.add("selection");
+    li.classList.add("home"); 
     div = document.createElement("div");
     p = document.createElement("p");
     p.textContent = "HOME";
@@ -56,7 +57,8 @@ function loadHeader() {
 
     /* create menu */
     li = document.createElement("li");
-    li.setAttribute("id", "menu");
+    li.classList.add("selection");
+    li.classList.add("menu"); 
     div = document.createElement("div");
     p = document.createElement("p");
     p.textContent = "MENU";
@@ -70,7 +72,8 @@ function loadHeader() {
     
     /* create about us */
     li = document.createElement("li");
-    li.setAttribute("id", "about-us");
+    li.classList.add("selection");
+    li.classList.add("about-us"); 
     div = document.createElement("div");
     p = document.createElement("p");
     p.textContent = "ABOUT US";
