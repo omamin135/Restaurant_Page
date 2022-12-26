@@ -82,6 +82,13 @@ function loadHeader() {
     
 }
 
+function loadContent() {
+    const contentDiv = document.createElement("div");
+    contentDiv.setAttribute("id", "content");
+
+    document.querySelector("body").appendChild(contentDiv);
+}
+
 function loadFooter() {
 
     const footer = document.createElement("footer");
@@ -102,5 +109,6 @@ function loadFooter() {
 
 export default function loadPage() {
     loadHeader();
+    loadContent();
     loadFooter();
 } 

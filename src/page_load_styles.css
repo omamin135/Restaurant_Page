@@ -54,31 +54,31 @@ header {
     justify-content: center;
 }
 
-ul {
-    border-color: blue;
+header ul {
     width:fit-content;
     display: flex;
     gap: 5px;
     padding: 0px;
 }
 
-li {
+header li {
     list-style-type: none;
     width: 100px;
 }
 
-li > div {
+header li > div {
     height: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-li > div:hover {
+header li > div:hover {
     color: var(--gold);
+    cursor: pointer;
 }
 
-li p {
+header li p {
     margin: 0px;
     text-align: center;
     font-family: "barlow";
