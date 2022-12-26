@@ -1,15 +1,4 @@
-@font-face {
-    font-family: "tangerine";
-    src: url("./Tangerine/Tangerine-Regular.ttf");
-}
-
-* {
-    --dark-gray: #151819;
-    --medium-gray: #252A2D;
-    --creamy-white: #F8F8ED;
-    --gold: #FFD700;
-}
-
+@import url("./styles.css");
 
 body {
     margin: 0px;
@@ -85,9 +74,14 @@ li > div {
     justify-content: center;
 }
 
+li > div:hover {
+    color: var(--gold);
+}
+
 li p {
     margin: 0px;
     text-align: center;
+    font-family: "barlow";
 }
 
 footer {
@@ -100,6 +94,7 @@ footer {
     bottom: 0px;
     background-color: var(--medium-gray);
     color: var(--creamy-white);
+    font-family: "barlow";
 }
 
 footer > img {

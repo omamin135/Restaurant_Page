@@ -1,6 +1,6 @@
-import img from "./pizza.jpg";
-import githubImage from "./github-mark.svg";
-import styles from "./page_load_styles.css";
+import img from "./assets/pizza.jpg";
+import githubImage from "./assets/github-mark.svg";
+import pageStyles from "./page_load_styles.css";
 
 function loadHeader() {
     const header = document.createElement("header");
