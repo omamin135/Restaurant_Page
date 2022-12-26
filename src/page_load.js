@@ -28,7 +28,7 @@ function loadHeader() {
 
     imgContainer.appendChild(div);
 
-    header.appendChild(imgContainer);
+    document.querySelector("body").appendChild(imgContainer);
 
     /* create the selection options */
     const headingDiv = document.createElement("div");
