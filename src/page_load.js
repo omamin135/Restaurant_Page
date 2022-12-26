@@ -111,10 +111,17 @@ function loadFooter() {
 
     footer.appendChild(p);
 
+    
+    const a = document.createElement("a");
+    a.href = "https://github.com/omamin135/Restaurant_Page";
+    a.setAttribute("target", "_blank");
+
     const githubImg = document.createElement("img");
     githubImg.setAttribute("src", githubImage);
 
-    footer.appendChild(githubImg);
+    a.appendChild(githubImg);
+
+    footer.appendChild(a);
 
     document.querySelector("body").appendChild(footer);
 

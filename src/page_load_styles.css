@@ -101,6 +101,12 @@ header li > div:hover .selection-line {
     transition: 0.3s;
 }
 
+header li > div:not(:hover) .selection-line {
+    background-color: var(--medium-gray);
+    width: 0px;
+    transition: 0.3s;
+}
+
 footer {
     width: 100%;
     display: flex;
@@ -112,7 +118,24 @@ footer {
     font-family: "barlow";
 }
 
-footer > img {
+footer a {
     width: 20px;
+    height: 20px;
+}
+
+footer img {
+    width: 100%;
     height: auto;
+}
+
+footer a:hover {
+    width: 30px;
+    height: 30px;
+    transition: 0.1s;
+}
+
+footer a:not(:hover) {
+    width: 20px;
+    height: 20px;
+    transition: 0.1s;
 }
