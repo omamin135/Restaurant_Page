@@ -38,6 +38,7 @@ function loadHeader() {
     selectionDiv.setAttribute("id", "selection");
 
     const ul = document.createElement("ul");
+    
 
     /* create home */
     let li = document.createElement("li");
@@ -47,6 +48,9 @@ function loadHeader() {
     p.textContent = "HOME";
 
     div.appendChild(p);
+    let lineDiv = document.createElement("div");
+    lineDiv.className = "selection-line";
+    div.appendChild(lineDiv);
     li.appendChild(div);
     ul.appendChild(li);
 
@@ -58,6 +62,9 @@ function loadHeader() {
     p.textContent = "MENU";
 
     div.appendChild(p);
+    lineDiv = document.createElement("div");
+    lineDiv.className = "selection-line";
+    div.appendChild(lineDiv);
     li.appendChild(div);
     ul.appendChild(li);
     
@@ -69,6 +76,9 @@ function loadHeader() {
     p.textContent = "ABOUT US";
 
     div.appendChild(p);
+    lineDiv = document.createElement("div");
+    lineDiv.className = "selection-line";
+    div.appendChild(lineDiv);
     li.appendChild(div);
     ul.appendChild(li);
 

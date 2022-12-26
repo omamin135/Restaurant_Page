@@ -1,9 +1,20 @@
 @import url("./styles.css");
 
-
 #menu-container {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+}
+
+.menu-list > img {
+    height: 40px;
+    width: auto;
+}
+
+.menu-category {
+    font-size: 1.1rem;
+    font-family: "barlow";
+    margin: 5px;
 }
 
 .menu-list {
@@ -20,17 +31,19 @@
     flex-direction: column;
     list-style-type: none;
     padding: 0px;
+    margin-top: 5px;
 }
 
 .menu-list li {
-    margin: 5px 10px;
+    margin: 0px;
 }
 
-.menu-list p {
+.menu-list ul p {
     width: 150px;
     text-align: center;
     margin: 5px 0px;
     font-size: 1rem;
     font-family: "barlow";
+    font-weight: 500;
 }
 

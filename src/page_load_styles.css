@@ -38,10 +38,10 @@ header {
 }
 
 #heading {
-    position: sticky;
     background-color: var(--medium-gray);
     color: var(--creamy-white);
     margin-top: -10px;
+    width: 100vw;
 }
 
 #header-img {
@@ -59,6 +59,7 @@ header ul {
     display: flex;
     gap: 5px;
     padding: 0px;
+    margin: 0px;
 }
 
 header li {
@@ -67,10 +68,12 @@ header li {
 }
 
 header li > div {
-    height: 30px;
+    height: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 2px;
+    align-items: center;
 }
 
 header li > div:hover {
@@ -84,14 +87,26 @@ header li p {
     font-family: "barlow";
 }
 
+.selection-line {
+    width: 0px;
+    height: 2px;
+    background-color: var(--medium-gray);
+}
+
+header li > div:hover .selection-line {
+    background-color: var(--gold);
+    width: 80%;
+    transition: 0.3s;
+}
+
 footer {
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    position: absolute;
-    bottom: 0px;
+    /* position: absolute;
+    bottom: 0px; */
     background-color: var(--medium-gray);
     color: var(--creamy-white);
     font-family: "barlow";

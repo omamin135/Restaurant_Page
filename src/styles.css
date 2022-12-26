@@ -6,6 +6,13 @@
 @font-face {
     font-family: "barlow";
     src: url("./assets/Barlow/Barlow-Black.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "barlow";
+    src: url("./assets/Barlow/Barlow-Medium.ttf");
+    font-weight: 500;
 }
 
 * {

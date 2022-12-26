@@ -1,11 +1,11 @@
-import menuStyle from "./menu.css";
+import menuStyle from "./menu_styles.css";
 import pizzaImg from "./assets/local_pizza.svg";
 import drinkImg from "./assets/wine.svg";
 import dessertImg from "./assets/icecream.svg";
 
 const menu = (() => {
 
-    const pizza = ["pizza 1", "pizza 2"];
+    const pizza = ["pizza 1", "pizza 2",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
     const drinks = ["drink 1", "drink 2"];
     const dessert = ["dessert 1", "dessert 2"];
 
@@ -37,6 +37,11 @@ function menuList(category, menuItems, img) {
     const image = document.createElement("img");
     image.src = img;
     menuListDiv.appendChild(image);
+
+    const p = document.createElement("p");
+    p.textContent = category.toUpperCase();
+    p.className = "menu-category";
+    menuListDiv.appendChild(p);
     
     const ul = document.createElement("ul");
 
