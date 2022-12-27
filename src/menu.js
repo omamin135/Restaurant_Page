@@ -5,8 +5,8 @@ import dessertImg from "./assets/icecream.svg";
 
 const menu = (() => {
 
-    const pizza = ["pizza 1", "pizza 2",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
-    const drinks = ["drink 1", "drink 2"];
+    const pizza = ["pizza 1", "pizza 2", "pizza 3", "pizza 4", "pizza 5"];
+    const drinks = ["drink 1", "drink 2", "drink 3", "drink 4", "drink 5", "drink 6"];
     const dessert = ["dessert 1", "dessert 2"];
 
     function getPizza(){
@@ -62,7 +62,7 @@ function menuList(category, menuItems, img) {
 
 }
 
-function loadMenu() {
+export default function loadMenu() {
 
     const menuDiv = document.createElement("div");
     menuDiv.setAttribute("id", "menu-container");
@@ -79,8 +79,5 @@ function loadMenu() {
     document.getElementById("content").appendChild(menuDiv);
 }
 
-function unLoadMenu(){
-    document.getElementById("content").removeChild(document.getElementById("menu-container"));
-}
 
-export {loadMenu, unLoadMenu}
+

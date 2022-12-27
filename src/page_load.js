@@ -22,13 +22,9 @@ function loadHeader() {
     p.textContent = "LePizza";
     div.appendChild(p);
 
-    p = document.createElement("p");
-    p.textContent = "Eat - Dine - Enjoy";
-    div.appendChild(p);
-
     imgContainer.appendChild(div);
 
-    document.querySelector("body").appendChild(imgContainer);
+    document.querySelector("body").insertBefore(imgContainer, document.getElementById("content"));
 
     /* create the selection options */
     const headingDiv = document.createElement("div");
@@ -91,15 +87,9 @@ function loadHeader() {
 
     header.appendChild(headingDiv);
 
-    document.querySelector("body").appendChild(header);
+    // document.querySelector("body").appendChild(header);
+    document.querySelector("body").insertBefore(header, document.getElementById("content"));
     
-}
-
-function loadContent() {
-    const contentDiv = document.createElement("div");
-    contentDiv.setAttribute("id", "content");
-
-    document.querySelector("body").appendChild(contentDiv);
 }
 
 function loadFooter() {
@@ -129,6 +119,5 @@ function loadFooter() {
 
 export default function loadPage() {
     loadHeader();
-    loadContent();
     loadFooter();
 } 
